@@ -17,6 +17,7 @@ export const env = {
   port: Number(process.env.PORT || 5000),
   mongodbUri: process.env.MONGODB_URI,
   jwtSecret: process.env.JWT_SECRET || 'dev-secret-change-in-production',
+  jwtExpiresIn: process.env.JWT_EXPIRES_IN || '7d',
   firebaseProjectId: process.env.FIREBASE_PROJECT_ID || 'devposting-50cfb',
   clientUrl: process.env.CLIENT_URL || '*',
 };
